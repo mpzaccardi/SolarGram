@@ -1,0 +1,38 @@
+[
+    {
+        "user": "Michael",
+        "isUser": true,
+        "userImageName": "MichaelPic",
+        "postImageName": "post1",
+        "id": 1001,
+        "isLiked": true,
+        "description": "This is a description of the photo."
+    },
+    {
+        "user": "Michael",
+        "isUser": true,
+        "userImageName": "MichaelPic",
+        "postImageName": "post2",
+        "id": 1002,
+        "isLiked": true,
+        "description": "This is a description of the photo."
+    },
+    {
+        "user": "Michael",
+        "isUser": true,
+        "userImageName": "MichaelPic",
+        "postImageName": "post3",
+        "id": 1003,
+        "isLiked": false,
+        "description": "This is a description of the photo."
+    },
+    {
+        "user": "Sarah",
+        "isUser": false,
+        "userImageName": "AndrewPic",
+        "postImageName": "post4",
+        "id": 1004,
+        "isLiked": false,
+        "description": "This is a description of the photo."
+    },
+]
