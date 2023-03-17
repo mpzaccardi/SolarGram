@@ -9,11 +9,11 @@ import SwiftUI
 
 struct Feed: View {
     
-    var feedPost: [PostData] {post}
+    @EnvironmentObject var viewModel: ModelData
     
     var body: some View {
         List {
-            ForEach(feedPost) {
+            ForEach(viewModel.posts) {
                 postData in FeedPost(postData: postData)
                     .listRowInsets(.init(top: 20,
                                          leading: 0,
@@ -29,6 +29,7 @@ struct Feed: View {
 struct Feed_Previews: PreviewProvider {
     static var previews: some View {
         Feed()
+            .environmentObject(ModelData())
             .previewDevice("iPhone 14 Pro")
             
     }

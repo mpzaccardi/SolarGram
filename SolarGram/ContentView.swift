@@ -7,7 +7,12 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
+    @StateObject var viewModel = ModelData()
+    
     var body: some View {
         TabView {
             Feed()
@@ -20,13 +25,14 @@ struct ContentView: View {
                     Image(systemName: "person.circle.fill")
                     Text("Profile")
                 }
-        }
+        }.environmentObject(viewModel)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
             .previewDevice("iPad Air (5th generation)")
     }
 }

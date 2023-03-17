@@ -27,7 +27,7 @@ struct GridPost: View {
 }
 
 struct GridPost_Previews: PreviewProvider {
-    static var posts = ModelData().post
+    static var posts = ModelData().posts
     static var previews: some View {
         GridPost(post: posts[0])
             .previewDevice("iPhone 14 Pro")

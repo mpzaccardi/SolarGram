@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FeedPost: View {
+    @EnvironmentObject var viewModel: ModelData
+    
     var postData: PostData
     var body: some View {
         VStack{
@@ -60,9 +62,10 @@ struct FeedPost: View {
 }
 
 struct FeedPost_Previews: PreviewProvider {
-    static var postData = ModelData().post
+    static var postData = ModelData().posts
     static var previews: some View {
         FeedPost(postData: postData[0])
+            .environmentObject(ModelData())
             .previewDevice("iPhone 14 Pro")
     }
 }

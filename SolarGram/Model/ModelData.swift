@@ -10,7 +10,7 @@ import Combine
 
 //ObservableObject and @Published allow data to be altered in any view? knows to commit to memory and @Publsihed good to use when multiple views will used data
 final class ModelData: ObservableObject {
-    @Published var post: [PostData] = load("solarData.json")
+    @Published var posts: [PostData] = load("solarData.json")
 }
 
 //loading data into environment/app
